@@ -12,7 +12,6 @@ class dustbin
 		this.dustbinHeight=200;
 		this.wallThickness=20;
 
-		this.image = loadImage("dustbingreen.png");
 		
 		this.bottomwall=Bodies.rectangle(x,y, this.dustbinWidth, this.wallThickness,options);
 		this.leftWall=Bodies.rectangle(x-this.dustbinWidth/2, y-this.dustbinHeight/2, this.wallThickness, this.dustbinHeight,options)
@@ -26,7 +25,7 @@ class dustbin
 	display()
 	{	
 		imageMode(CENTER);
-		image(this.image,this.x,this.y-this.dustbinHeight/2,this.dustbinWidth, this.dustbinHeight);
+		
 		
 	}
 
